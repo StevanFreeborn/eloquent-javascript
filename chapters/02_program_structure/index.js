@@ -7,10 +7,10 @@ export function printTriangle(numOfLines) {
   const lines = [];
   
   for (let i = 0; i < numOfLines; i++) {
-    lines.push("#".repeat(i + 1));
+    lines.push('#'.repeat(i + 1));
   }
 
-  const triangle = lines.join("\n");
+  const triangle = lines.join('\n');
 
   console.log(triangle);
 }
@@ -27,14 +27,14 @@ export function printTriangle(numOfLines) {
  */
 export function printFizzBuzz(lower, upper) {
   for (let i = lower; i <= upper; i++) {
-    let output = "";
+    let output = '';
 
     if (i % 3 === 0) {
-      output += "Fizz";
+      output += 'Fizz';
     }
 
     if (i % 5 === 0) {
-      output += "Buzz";
+      output += 'Buzz';
     }
 
     console.log(output || i);

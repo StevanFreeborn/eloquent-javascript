@@ -1,14 +1,14 @@
-import { afterEach, describe, expect, it, vi } from "vitest";
-import { expectedFizzBuzzOutput } from "./data.js";
+import { afterEach, describe, expect, it, vi } from 'vitest';
+import { expectedFizzBuzzOutput } from './data.js';
 import { printChessboard, printFizzBuzz, printTriangle } from "./index.js";
 
-describe("printTriangle", () => {
+describe('printTriangle', () => {
   afterEach(() => {
     vi.restoreAllMocks();
   });
 
-  it("should print a triangle", () => {
-    const spy = vi.spyOn(console, "log").mockImplementation(() => {});
+  it('should print a triangle', () => {
+    const spy = vi.spyOn(console, 'log').mockImplementation(() => {});
 
     printTriangle(7);
     
@@ -16,13 +16,13 @@ describe("printTriangle", () => {
   });
 });
 
-describe("printFizzBuzz", () => {
+describe('printFizzBuzz', () => {
   afterEach(() => {
     vi.restoreAllMocks();
   });
 
-  it("should print correct output for the numbers from 1 to 100", () => {
-    const spy = vi.spyOn(console, "log").mockImplementation(() => {});
+  it('should print correct output for the numbers from 1 to 100', () => {
+    const spy = vi.spyOn(console, 'log').mockImplementation(() => {});
 
     printFizzBuzz(1, 100);
 
@@ -32,13 +32,13 @@ describe("printFizzBuzz", () => {
   });
 });
 
-describe("printChessboard", () => {
+describe('printChessboard', () => {
   afterEach(() => {
     vi.restoreAllMocks();
   });
 
   it('should print a chessboard of size 8', () => {
-    const spy = vi.spyOn(console, "log").mockImplementation(() => {});
+    const spy = vi.spyOn(console, 'log').mockImplementation(() => {});
     
     printChessboard(8);
 
@@ -46,7 +46,7 @@ describe("printChessboard", () => {
   });
 
   it('should print chessboard of size 4', () => {
-    const spy = vi.spyOn(console, "log").mockImplementation(() => {});
+    const spy = vi.spyOn(console, 'log').mockImplementation(() => {});
     
     printChessboard(4);
 
