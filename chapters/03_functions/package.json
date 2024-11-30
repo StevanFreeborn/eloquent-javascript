@@ -1,0 +1,13 @@
+{
+  "name": "03_functions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "author": "Stevan Freeborn",
+  "license": "MIT",
+  "dependencies": {
+    "vitest": "^2.1.6"
+  }
+}
